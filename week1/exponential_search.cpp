@@ -45,23 +45,20 @@ int exponential_search(int *arr,int n,int key)
 }
 int main()
 {
-    // for reading input from a text file
     freopen("input2.txt","r",stdin);
-    // for writing output on a text file
+    
     freopen("output3.txt","w",stdout);
     int t; 
-    // t is the number of test cases
-    cin>>t;
+    cin<<t;
     while(t--)
     {
     int n;
     cin>>n;
-    // n is the number of elments in the array
+    
     int *arr=new int[n];
     for(int i=0;i<n;i++)
     cin>>arr[i];
     int key;
-    // key is the key element to find
     cin>>key;
     int c=exponential_search(arr,n,key);
     cout<<c<<endl;
